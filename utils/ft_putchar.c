@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   _ft_putchar.c                                      :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 18:49:52 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/09 19:04:05 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/09 22:53:29 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void ft_putchar(char c, int *ptr_chars_printed)
+void	ft_putchar(char c, int *ptr_chars_printed)
 {
 	unsigned char	uc;
 
