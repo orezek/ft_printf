@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/09 18:19:40 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/09 21:56:09 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,13 +49,8 @@ int	main(void)
 
 	s_ptr = NULL;
 	ptr = str;
-	result = printf("This is a string.");
-	printf("%s %X %s","The amount of:", 1, "kc.");
-	printf("\nThis is %s : %c, which takes %d byte of memory or %d%% of the memory of the int type.", "char", 'c', 1, 25);
-	printf("\nThe number of chars printed is: %d\n", result);
-	ft_printf("The number of chars printed is: %d\n", result, str);
-	ft_printf("Custom printf. The number of chars printed is: %p\n", ptr);
-	printf("Printing a pointer %p\n", s_ptr);
+	result = printf("My first string: %s\n", "Ahoj, jak se mas?");
+	printf("Result is: %d\n", result);
 	return (0);
 }
 
