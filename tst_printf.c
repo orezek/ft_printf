@@ -6,11 +6,13 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/09 21:56:09 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/11 11:43:36 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+//cc tst_printf.c ft_printf.c utils/ft_putchar.c utils/ft_putstr.c utils/ft_putnbr.c&& ./a.out
+
 
 // The function prints whatever is in the first argument as long as it is a string.
 // In the first argument which must a string is possible to insert a variable with the % sign.
@@ -39,7 +41,7 @@
 
 // Todo: implement conversion functions for all types.
 // Todo: implement number of printed characters function.
-//
+// cc tst_printf.c ft_printf.c utils/ft_putchar.c utils/ft_putstr.c utils/ft_putnbr.c utils/ft_itoa.c utils/ft_unsigned_itoa.c utils/ft_unsigned_putnbr.c && ./a.out
 int	main(void)
 {
 	int result;
@@ -49,7 +51,7 @@ int	main(void)
 
 	s_ptr = NULL;
 	ptr = str;
-	result = printf("My first string: %s\n", "Ahoj, jak se mas?");
+	result = ft_printf("My first integer: %u\n", -123456);
 	printf("Result is: %d\n", result);
 	return (0);
 }
