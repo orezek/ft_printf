@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/09 22:44:05 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/11 11:15:42 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,17 @@ int	ft_printf(const char *format, ...)
 			if (*format == 's')
 				ft_putstr(va_arg(args, char *), ptr_chars_printed);
 			else if (*format == 'd')
-				//ft_putnbr(va_arg(args, int));
-				printf("%d", va_arg(args, int));
+				ft_putnbr(va_arg(args, int), ptr_chars_printed);
 			else if (*format == 'c')
 				ft_putchar(va_arg(args, int), ptr_chars_printed);
 			else if (*format == 'p')
 				//ft_putnbr(va_arg(args, int *));
 				printf("%p", va_arg(args, void *));
 			else if (*format == 'i')
-				//ft_putnbr(va_arg(args, int));
-				printf("%i", va_arg(args, int));
+				ft_putnbr(va_arg(args, int), ptr_chars_printed);
 			else if (*format == 'u')
 				//ft_putnbr(va_arg(args, unsigned int));
-				printf("%u", va_arg(args, unsigned int));
+				ft_unsigned_putnbr(va_arg(args, unsigned int), ptr_chars_printed);
 			else if (*format == 'x')
 				//ft_putnbr(va_arg(args, unsigned int));
 				printf("%x", va_arg(args, unsigned int));
