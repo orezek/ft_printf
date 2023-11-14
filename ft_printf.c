@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 17:51:02 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/14 18:11:27 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,7 @@ int	ft_printf(const char *format, ...)
 		{
 			format++;
 			if (ft_printf_short((char *)format, ptr_chars_printed, args) == -1)
-			{
-				write(2, "Error: invalid conversion specifier '", 37);
-				write(2, format, sizeof(char));
-				write(2, "'\n", 2);
-				return (0);
-			}
+				return (chars_printed += 1);
 		}
 		else
 			ft_putchar(*format, ptr_chars_printed);
