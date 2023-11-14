@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:29 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 16:36:09 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/14 17:40:58 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,5 @@ int		ft_toupper(int c);
 void	ft_puthex_upper(int ptr_address, int *ptr_chars_printed);
 void	ft_putstr_upper(char *str, int *ptr_chars_printed);
 char	*ft_strdup(char *src);
+int		ft_printf_short(char *format, int *ptr_chars_printed, va_list args);
 #endif
