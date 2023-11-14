@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 17:08:53 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/14 17:55:03 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	main(void)
 	char *ptr;
 	char str[] = "ahoj";
 	ptr = str;
-	result1 = ft_printf("printf: %p\n", ptr);
-	result2 = printf("printf: %p\n", ptr);
+	result1 = ft_printf("printf: %s\n", ptr);
+	result2 = printf("printf: %s\n", ptr);
 	printf("ft_printf: %d\n", result1);
 	printf("printf: %d\n", result2);
 
