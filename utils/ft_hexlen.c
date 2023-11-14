@@ -1,25 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_hexlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 23:28:48 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/13 18:25:44 by aldokezer        ###   ########.fr       */
+/*   Created: 2023/11/13 18:15:46 by aldokezer         #+#    #+#             */
+/*   Updated: 2023/11/13 18:15:51 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_putnbr(int n, int *ptr_chars_printed)
+int	ft_hexlen(u_int64_t bin_n)
 {
-	char	*ptr;
-	char	*or_ptr;
+	int	i;
 
-	ptr = ft_itoa(n);
-	or_ptr = ptr;
-	while (*ptr)
-		ft_putchar(*(ptr++), ptr_chars_printed);
-	free(or_ptr);
+	i = 0;
+	while (bin_n)
+	{
+		i++;
+		bin_n >>= 4;
+	}
+	return (i);
 }

@@ -1,25 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 23:28:48 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/13 18:25:44 by aldokezer        ###   ########.fr       */
+/*   Created: 2023/11/13 18:15:06 by aldokezer         #+#    #+#             */
+/*   Updated: 2023/11/13 18:15:11 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_putnbr(int n, int *ptr_chars_printed)
+char	*ft_strcpy(char *des, char *src)
 {
-	char	*ptr;
-	char	*or_ptr;
+	int		i;
+	char	*ptr_des;
 
-	ptr = ft_itoa(n);
-	or_ptr = ptr;
-	while (*ptr)
-		ft_putchar(*(ptr++), ptr_chars_printed);
-	free(or_ptr);
+	des = malloc(sizeof(char) * (ft_strlen(src) + 1));
+	ptr_des = des;
+	i = 0;
+	while (*src)
+	{
+		*des++ = *src++;
+	}
+	*des = '\0';
+	return (ptr_des);
 }

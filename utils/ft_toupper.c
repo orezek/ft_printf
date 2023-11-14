@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 23:28:48 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/13 18:25:44 by aldokezer        ###   ########.fr       */
+/*   Created: 2023/11/14 13:11:41 by aldokezer         #+#    #+#             */
+/*   Updated: 2023/11/14 13:12:18 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_putnbr(int n, int *ptr_chars_printed)
+int	ft_toupper(int c)
 {
-	char	*ptr;
-	char	*or_ptr;
-
-	ptr = ft_itoa(n);
-	or_ptr = ptr;
-	while (*ptr)
-		ft_putchar(*(ptr++), ptr_chars_printed);
-	free(or_ptr);
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
 }

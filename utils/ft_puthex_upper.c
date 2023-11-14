@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_puthex_upper.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 23:28:48 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/13 18:25:44 by aldokezer        ###   ########.fr       */
+/*   Created: 2023/11/14 13:04:37 by aldokezer         #+#    #+#             */
+/*   Updated: 2023/11/14 13:20:32 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_putnbr(int n, int *ptr_chars_printed)
+void	ft_puthex_upper(int ptr_address, int *ptr_chars_printed)
 {
-	char	*ptr;
-	char	*or_ptr;
+	char	*ptr_address_str;
 
-	ptr = ft_itoa(n);
-	or_ptr = ptr;
-	while (*ptr)
-		ft_putchar(*(ptr++), ptr_chars_printed);
-	free(or_ptr);
+	ptr_address_str = ft_convert_number_to_hex((u_int64_t)ptr_address);
+	ft_putstr_upper(ptr_address_str, ptr_chars_printed);
+	free(ptr_address_str);
 }

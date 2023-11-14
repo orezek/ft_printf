@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/11 11:43:36 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/14 15:53:45 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,18 +41,20 @@
 
 // Todo: implement conversion functions for all types.
 // Todo: implement number of printed characters function.
-// cc tst_printf.c ft_printf.c utils/ft_putchar.c utils/ft_putstr.c utils/ft_putnbr.c utils/ft_itoa.c utils/ft_unsigned_itoa.c utils/ft_unsigned_putnbr.c && ./a.out
+// cc tst_printf.c ft_printf.c utils/ft_convert_number_to_hex.c utils/ft_strlen.c utils/ft_hexlen.c utils/ft_strcpy.c utils/ft_putchar.c utils/ft_putnbr.c utils/ft_putptr.c utils/ft_putstr.c utils/ft_unsigned_putnbr.c utils/ft_convert_pointer_to_hex.c utils/ft_itoa.c utils/ft_unsigned_itoa.c utils/ft_puthex.c utils/ft_puthex_upper.c utils/ft_putstr_upper.c utils/ft_toupper.c && ./a.out
 int	main(void)
 {
-	int result;
+	int	result1;
+	int	result2;
 	char *ptr;
-	char str[] = "This is a string.";
-	char	*s_ptr;
-
-	s_ptr = NULL;
+	char str[] = "ahoj";
 	ptr = str;
-	result = ft_printf("My first integer: %u\n", -123456);
-	printf("Result is: %d\n", result);
+	result1 = ft_printf("ft_print: %s\n", str);
+	result2 = printf("printf: %s\n", str);
+	printf("ft_printf: %d\n", result1);
+	printf("printf: %d\n", result2);
+
+
 	return (0);
 }
 
