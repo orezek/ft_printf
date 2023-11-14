@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:27:30 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 16:00:13 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/14 17:08:01 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 int	ft_printf(const char *format, ...)
 {
 	va_list	args;
-	va_list	args_cpy;
 	int		chars_printed;
 	int		*ptr_chars_printed;
 
