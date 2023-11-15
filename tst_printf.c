@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   tst_printf.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 18:12:03 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/15 15:22:07 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@ int	main(void)
 	char *ptr;
 	char str[] = "ahoj";
 	ptr = str;
-	result1 = ft_printf("printf1: %s\n", ptr);
-	write(1, "\n", 1);
-	result2 = printf("printf2: %s\n", ptr);
-	printf("ft_printf: %d\n", result1);
-	printf("printf: %d\n", result2);
+	//result1 = ft_printf(" %x ", -1);
+	//write(1, "\n", 1);
+	//result2 = printf(" %x ", -1);
+	//write(1, "\n", 1);
+	//printf("ft_printf: %d\n", result1);
+	ft_printf(" NULL %s NULL ", NULL);
+	//printf("printf: %d\n", result2);
 	return (0);
 }
 
