@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_unsigned_putnbr.c                               :+:      :+:    :+:   */
+/*   ft_putnbr_unsigned.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 11:09:37 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 15:47:05 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/16 00:20:08 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_putnbr_unsigned(int n, int *ptr_chars_printed)
+void	ft_putnbr_unsigned(unsigned int n, int *ptr_chars_printed)
 {
 	char	*ptr;
 	char	*or_ptr;
