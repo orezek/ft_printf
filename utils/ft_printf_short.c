@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 17:12:45 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 21:10:41 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/16 00:04:51 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_printf_short(char *format, int *ptr_chars_printed, va_list *args)
 	else if (*format == 'c')
 		ft_putchar(va_arg(*args, int), ptr_chars_printed);
 	else if (*format == 'p')
-		ft_putptr(va_arg(*args, int), ptr_chars_printed);
+		ft_putptr(va_arg(*args, void *), ptr_chars_printed);
 	else if (*format == 'i')
 		ft_putnbr(va_arg(*args, int ), ptr_chars_printed);
 	else if (*format == 'u')

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_convert_pointer_to_hex.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
+/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:10:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 14:55:20 by orezek           ###   ########.fr       */
+/*   Updated: 2023/11/15 23:54:26 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

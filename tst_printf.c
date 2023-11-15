@@ -6,7 +6,7 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:41:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 20:51:23 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/16 00:02:14 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@ int	main(void)
 	//result2 = printf(" %x ", -1);
 	//write(1, "\n", 1);
 	//printf(" %c %c %c ", '0', 0, '1');
-	ft_printf(" %c %c %c ", 'a', 'b', 'c');
+	ft_printf("%p\n", str);
+	printf("%p\n",str);
 	//printf("printf: %d\n", result2);
 	return (0);
 }
