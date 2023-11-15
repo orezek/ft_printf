@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_convert_pointer_to_hex.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:10:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/14 16:56:11 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/15 14:55:20 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-char	*ft_convert_pointer_to_hex(u_int64_t bin_n)
+char	*ft_convert_pointer_to_hex(uint64_t bin_n)
 {
 	char	*hex_str;
 	char	hex_digits[17];
