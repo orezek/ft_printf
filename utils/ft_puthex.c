@@ -6,13 +6,13 @@
 /*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 13:04:37 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 20:29:13 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/16 00:13:50 by aldokezer        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_printf.h"
 
-void	ft_puthex(int ptr_address, int *ptr_chars_printed)
+void	ft_puthex(unsigned int ptr_address, int *ptr_chars_printed)
 {
 	char	*ptr_address_str;
 
