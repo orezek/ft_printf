@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_convert_pointer_to_hex.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aldokezer <aldokezer@student.42.fr>        +#+  +:+       +#+        */
+/*   By: orezek <orezek@student.42prague.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 18:10:11 by aldokezer         #+#    #+#             */
-/*   Updated: 2023/11/15 23:54:26 by aldokezer        ###   ########.fr       */
+/*   Updated: 2023/11/16 10:51:53 by orezek           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_convert_pointer_to_hex(uint64_t bin_n)
 	int		index;
 
 	if (bin_n == 0)
-		return (ft_strdup("0x0"));
+		return (ft_strdup("(nil)"));
 	hex_len = ft_hexlen(bin_n);
 	hex_str = (char *)malloc(sizeof(char) * (hex_len + 3));
 	if (!hex_str)
